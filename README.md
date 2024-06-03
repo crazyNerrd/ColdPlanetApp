@@ -7,7 +7,7 @@
 
 # Live Application 
 
-> xyz
+> https://cold-planet-app.vercel.app/
 
  # Frontend
   
