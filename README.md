@@ -1,11 +1,43 @@
-# Build & Deploy Movie App - Repo from my YouTube Tutorial
 
-[![Video](https://github.com/stefandjikic/movie-app-yt/assets/65912958/ef03ae73-1da2-49fa-a3d5-d0ebce7b75c8)
-](https://youtu.be/eh8mpiN-7bA)
+# COLDPLANET MOVIE APP
 
-## Technologies used
+> NAME - MITESH RAMTEKE ,
+> REG NO - 20MIC0133
 
-- React
-- Firebase
-- Chakra UI
-- TMDB API
+
+# Live Application 
+
+> xyz
+
+ # Frontend
+  
+  - React
+
+# Backend
+ 
+  - Firebase (pre built backend provided by the google)
+  - TMDB API (for fetching the movie data from api)
+
+# Styling 
+- Chakra UI 
+
+# Steps to run the app
+
+- Clone the respository by runnig following command 
+
+ > git clone https://github.com/crazyNerrd/ColdPlanetApp.git
+
+ - Go to the cloned directory by  
+
+ > cd ColdPlanetApp
+
+ - Install the necessory dependencies by 
+
+ > npm install
+
+ - Run the project by 
+  
+  > npm run dev
+
+
+
