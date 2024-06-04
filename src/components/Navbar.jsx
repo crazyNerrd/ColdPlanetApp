@@ -16,6 +16,7 @@ import {
   MenuItem,
   MenuList,
   useDisclosure,
+  Text,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/useAuth";
@@ -46,7 +47,14 @@ const Navbar = () => {
               letterSpacing={"widest"}
               fontFamily={"mono"}
             >
-              COLDPLANET
+              <Text
+                bgGradient="linear(to-l, #7928CA, #FF0080)"
+                bgClip="text"
+                fontSize="3xl"
+                fontWeight="extrabold"
+              >
+                COLDPLANET
+              </Text>
             </Box>
           </Link>
 
@@ -56,10 +64,16 @@ const Navbar = () => {
             alignItems={"center"}
             display={{ base: "none", md: "flex" }}
           >
-            <Link to="/" style={{color:"white"}}>Home</Link>
-            <Link to="/movies" style={{color:"white"}}>Movies</Link>
-            <Link to="/shows" style={{color:"white"}}>TV Shows</Link>
-            <Link to="/search" style={{color:"white"}}>
+            <Link to="/" style={{ color: "white" }}>
+              Home
+            </Link>
+            <Link to="/movies" style={{ color: "white" }}>
+              Movies
+            </Link>
+            <Link to="/shows" style={{ color: "white" }}>
+              TV Shows
+            </Link>
+            <Link to="/search" style={{ color: "white" }}>
               <SearchIcon fontSize={"xl"} />
             </Link>
             {user && (
@@ -73,10 +87,12 @@ const Navbar = () => {
                   />
                 </MenuButton>
                 <MenuList>
-                  <Link to="/watchlist" style={{color:"white"}}>
+                  <Link to="/watchlist" style={{ color: "white" }}>
                     <MenuItem>Watchlist</MenuItem>
                   </Link>
-                  <MenuItem onClick={logout} style={{color:"white"}}>Logout</MenuItem>
+                  <MenuItem onClick={logout} style={{ color: "white" }}>
+                    Logout
+                  </MenuItem>
                 </MenuList>
               </Menu>
             )}
@@ -124,10 +140,15 @@ const Navbar = () => {
 
                 <DrawerBody>
                   <Flex flexDirection={"column"} gap={"4"} onClick={onClose}>
-
-                  <Link style={{ color: 'orange' }} to="/">Home</Link>
-<Link style={{ color: 'orange' }} to="/movies">Movies</Link>
-<Link style={{ color: 'orange' }} to="/shows">TV Shows</Link>
+                    <Link style={{ color: "orange" }} to="/">
+                      Home
+                    </Link>
+                    <Link style={{ color: "orange" }} to="/movies">
+                      Movies
+                    </Link>
+                    <Link style={{ color: "orange" }} to="/shows">
+                      TV Shows
+                    </Link>
 
                     {user && (
                       <>
