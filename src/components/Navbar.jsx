@@ -56,10 +56,10 @@ const Navbar = () => {
             alignItems={"center"}
             display={{ base: "none", md: "flex" }}
           >
-            <Link to="/">Home</Link>
-            <Link to="/movies">Movies</Link>
-            <Link to="/shows">TV Shows</Link>
-            <Link to="/search">
+            <Link to="/" style={{color:"white"}}>Home</Link>
+            <Link to="/movies" style={{color:"white"}}>Movies</Link>
+            <Link to="/shows" style={{color:"white"}}>TV Shows</Link>
+            <Link to="/search" style={{color:"white"}}>
               <SearchIcon fontSize={"xl"} />
             </Link>
             {user && (
@@ -124,9 +124,11 @@ const Navbar = () => {
 
                 <DrawerBody>
                   <Flex flexDirection={"column"} gap={"4"} onClick={onClose}>
-                    <Link to="/">Home</Link>
-                    <Link to="/movies">Movies</Link>
-                    <Link to="/shows">TV Shows</Link>
+
+                  <Link style={{ color: 'orange' }} to="/">Home</Link>
+<Link style={{ color: 'orange' }} to="/movies">Movies</Link>
+<Link style={{ color: 'orange' }} to="/shows">TV Shows</Link>
+
                     {user && (
                       <>
                         <Link to="/watchlist">Watchlist</Link>

@@ -1,6 +1,9 @@
 
 # COLDPLANET MOVIE APP
 
+- This movie app is developed with React and features Firebase authentication and database integration.
+
+
 > NAME - MITESH RAMTEKE ,
 > REG NO - 20MIC0133
 
