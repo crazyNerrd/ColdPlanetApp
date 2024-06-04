@@ -73,10 +73,10 @@ const Navbar = () => {
                   />
                 </MenuButton>
                 <MenuList>
-                  <Link to="/watchlist">
+                  <Link to="/watchlist" style={{color:"white"}}>
                     <MenuItem>Watchlist</MenuItem>
                   </Link>
-                  <MenuItem onClick={logout}>Logout</MenuItem>
+                  <MenuItem onClick={logout} style={{color:"white"}}>Logout</MenuItem>
                 </MenuList>
               </Menu>
             )}
